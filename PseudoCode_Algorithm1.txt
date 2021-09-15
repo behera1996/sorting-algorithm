@@ -1,0 +1,32 @@
+Pseudocode for Sorting Algorithm 
+
+Function algorithm(input array)
+ Start:
+	n=12 // No. of elements available for input array
+	
+	for(int pass = n-1;pass >= 0; pass--)
+	Start:   //Loop to initiate the passes for the number of elements
+		for(int i=0; i <= pass-1 ; i++) // for each pass elements needs to be sorted
+		Start
+			/******* Swapping the elements using third variable********/
+			if(arr[i] > arr[i+1]) 
+			Start:
+				// swap elements
+				int temp = arr[i];
+				arr[i]=arr[i+1];
+				arr[i+1] = temp;
+			End
+		End
+	
+	End
+/************** Printing the sorted array logic starts************/
+	int z=0;   
+   	while (z < 12) 
+	Start:
+      	    cout << arr[z] << "  ";
+            z++;
+   	End
+/************** Printing the sorted array logic ends************/
+End
+
+ 
